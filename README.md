@@ -27,9 +27,7 @@ This above url is requesting 15 questions to API.
 
 
 
-## Appendix
 
-Any additional information goes here
 
 
 ## Demo
