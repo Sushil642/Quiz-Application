@@ -1,0 +1,38 @@
+.timer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .circular-timer {
+    position: relative;
+    width: 120px;
+    height: 120px;
+  }
+  
+  .progress-ring {
+    transform: rotate(-90deg);
+  }
+  
+  .progress-ring__circle {
+    fill: none;
+    stroke: #4caf50;
+    stroke-width: 8;
+    transition: stroke-dashoffset 0.35s;
+    transform-origin: center;
+    r: 50; /* Radius */
+    cx: 60; /* Center X */
+    cy: 60; /* Center Y */
+  }
+  
+  .timer-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+  }
+  

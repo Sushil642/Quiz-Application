@@ -1,0 +1,117 @@
+/* Main question area container */
+.main-content {
+    flex: 1;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Quiz title styling */
+  .quiz-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 20px;
+  }
+  
+  /* Question text styling */
+  .question-text {
+    font-size: 18px;
+    color: #444444;
+    margin-bottom: 30px;
+    line-height: 1.5;
+  }
+  
+  /* Option styles */
+  .options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Consistent spacing between options */
+  }
+  
+  .option-label {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9; /* Light gray background */
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 16px;
+    color: #555555;
+    cursor: pointer;
+    transition: background-color 0.2s, border-color 0.2s;
+  }
+  
+  .option-label:hover {
+    background-color: #f1f1f1; /* Slight hover effect */
+    border-color: #cccccc;
+  }
+  
+  .option-label input[type="radio"] {
+    margin-right: 10px;
+    accent-color: #4caf50; /* Custom color for radio buttons */
+  }
+  
+  /* Navigation bar */
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #777777;
+  }
+  
+  .navigation span {
+    font-size: 14px;
+    color: #999999;
+  }
+  
+  /* Next button */
+  .primary-btn {
+    background-color: #4caf50;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+  }
+  
+  .primary-btn:hover {
+    background-color: #45a049;
+    transform: scale(1.03); /* Slight scaling for hover effect */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .main-content {
+      padding: 20px;
+    }
+  
+    .quiz-title {
+      font-size: 20px;
+    }
+  
+    .question-text {
+      font-size: 16px;
+    }
+  
+    .option-label {
+      font-size: 14px;
+      padding: 10px;
+    }
+  
+    .primary-btn {
+      padding: 8px 16px;
+      font-size: 12px;
+    }
+  }
+  
