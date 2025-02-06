@@ -11,7 +11,7 @@ const Sidebar = ({ questions, visited, currentQuestionIndex, onNavigate, answers
         return (
           <div
             key={index}
-            className={`question-number ${isAttempted ? 'attempted' : ''} ${isVisited ? 'visited' : ''}`}
+            
             onClick={() => onNavigate(index)}
           >
             {index + 1}
